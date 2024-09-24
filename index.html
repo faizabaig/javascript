@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1 id="title">
+        hello there
+    </h1>
+    <button onclick="changeTitle()">click me</button>
+
+    <button id="mybutton">click me</button>
+    <script>
+        console.log("hello world");
+        let name = "faiza" ;
+        console.log(name);
+        let x = 10;
+        console.log(x);
+        //Functions: Reusable blocks of code.
+         function greet(){
+            console.log("this is my code");
+         }
+         greet();
+         //conditional statment: Perform actions based on conditions.
+         num = 10;
+         if(num>8){
+            console.log("number is greater than 8");
+         }else{
+            console.log("number is less than 8");
+         }
+         console.log(!!"false"===!!"true");
+         //loop iteration: Repeat actions.
+         for(let i=1; i<10; i++){
+            console.log("iteration: " + i);
+         }
+         //DOM manipulation:The Document Object Model (DOM) allows JavaScript to interact with and modify HTML content.
+         function changeTitle(){
+            document.getElementById("title").innerHTML = "The magic of javascript";
+         }
+         //addeventlistne:Events allow JavaScript to react to user interactions like clicks, key presses, or mouse movements.
+       let button = document.getElementById("mybutton");
+       button.addEventListener("click", function() {
+        alert("button was clicked");
+       }
+    );
+    //Arrays: Used to store multiple values in a single variable.
+    let fruit = ["apple", "banana", "grapes","mango"];
+    console.log(fruit[1]);
+     let cars = ["suzuki","mehran","honda"];
+     console.log(cars[2]);
+ 
+   // Objects: Used to store key-value pairs.
+    let dress = {
+      color: "black",
+      stuff: "linen",
+      brand: "bareeze"
+    };
+    console.log(dress.stuff);
+
+    //Loops with Arrays: You can use loops to work with arrays.
+    let colors=["red","green","black","pink"];
+    for(i=0; i<colors.length; i++){
+      console.log(colors[i]);
+    }
+    
+    </script>
+</body>
+</html>
